@@ -45,10 +45,7 @@ $( document ).ready( function() {
     };
     
     var c_curve = function( x, y, length, angle, iteration, ctx  ) {
-        //var fx     = x; 
-        //var fy     = y;
         var alpha  = angle;
-        //var it_n   = iteration_n;
         if( iteration > 0 ) {
             length = (length / Math.sqrt(2));
             c_curve(x, y, length, (alpha + default_angle), (iteration - 1), ctx ); // Recursive Call
@@ -66,26 +63,7 @@ $( document ).ready( function() {
 	    ctx.stroke();
         }
     };
-    
-    /*
-    var main = function() {
-        C_curve points = new C_curve();
-        points.x = 200; // Stating x value
-        points.y = 100; // Stating y value
-        points.len = 150; // Stating length value
-        points.alpha_angle = 90; // Stating angle value
-        points.iteration_n = 15; // Stating iteration value
-
-        JFrame frame = new JFrame("Points");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(points);
-        frame.setSize(500, 500);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-    };
-    */
-
+ 
     draw();
 
     $( 'input#iterations' ).change( draw );
