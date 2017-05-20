@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lévy C-Curve</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Lévy C-Curve Generator" />
+    <meta name="keywords" content="fractal, levy, c-curve, javascript, canvas, html, html5" />
+    <meta name="author" content="Ikaros Kappler" />
+    <meta name="date" content="2017-05-18" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="lib/jquery-3.2.0.min.js"></script>
+    <script src="levy-c-curve.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body> 
+    <h3>Lévy C-Curve Generator</h3>
+    <div id="left">
+      <div class="label">Iterations:</div> <input type="number" id="iterations" value="8" step="1" min="0" /><br/>
+      <div class="label">Line width:</div> <input type="number" id="line_width" value="2" step="1" min="1" /><br/>
+    </div>
+    <div id="right">
+      Stats<br/>
+    </div>
+    <br/>
+    <canvas id="my_canvas" width="820" height="540"></canvas>
+
+    <!--
+    <div id="overlay">Rendering ...<br/><button type="button" id="cancel_render">Cancel</button></div>
+    -->
+  </body>
+</html>
