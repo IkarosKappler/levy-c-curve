@@ -22,4 +22,7 @@ Written in Javascript (with HTML5 Canvas).
 
 The Lévy-C-Curve is also known as the Lévy dragon (a variant of the famous Dragon Curve Fractal).
 
+Demo at
+http://www.int2byte.de/public/levy-c-curve/main.html
+
 Share and enjoy.
